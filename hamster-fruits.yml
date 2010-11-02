@@ -1,0 +1,12 @@
+global:
+  database: '~/.local/share/hamster-applet/hamster.db'
+
+#production:
+#  database: '~/.local/share/hamster-applet/hamster.db'
+
+#development:
+#  database: '~/.local/share/hamster-applet/hamster.db'
+
+test:
+  database: 'spec/fixtures/hamster.db'
+
