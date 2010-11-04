@@ -1,5 +1,14 @@
+require 'bundler'
+Bundler.require(:default)
+
+require 'lib/hamster_fruits/settings'
+
+
 module HamsterFruits
   class Application < Sinatra::Application
+    set :root, File.expand_path(File.dirname(__FILE__))
+    register HamsterFruits::Settings
+
     get '/' do
       #haml :index
       "BOOOO"
